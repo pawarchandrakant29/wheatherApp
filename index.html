@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city..." class="show">
+            <button id="submit-btn">
+                <i class="bi bi-search"></i> <!-- Using a Bootstrap icon for the search button -->
+            </button>
+        </div>
+        <div id="weather-info">
+            <div class="weather-row">
+                <img id="icon" alt="Weather Icon">
+                <div class="weather-details">
+                    <p id="temperature"></p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <i class="bi bi-cloudy"></i><p id="description"></p>
+            </div>
+            <div class="location-time">
+                <p id="location"><i class="bi bi-geo-alt"></i> <span id="city-name"></span></p>
+                <p id="current-time"><i class="bi bi-clock"></i> <span id="time"></span></p>
+            </div>
+            <p id="error-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

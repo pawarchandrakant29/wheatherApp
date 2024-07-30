@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("images/bg-star.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(181, 211, 233, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(181, 211, 233, 0.14);
+    width: 280px;
+    padding: 30px;
+}
+
+.search-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 0;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 10px;
+    outline: none;
+    opacity: 0;
+    background-color: transparent;
+    transition: width 0.3s, opacity 0.3s;
+}
+
+input[type="text"].show {
+    width: 210px;
+    opacity: 1;
+}
+
+button {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+#weather-info {
+    margin-top: 20px;
+}
+
+.weather-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#icon {
+    width: 100px;
+    height: 80px;
+}
+
+#description {
+    padding-left: 10px;
+    margin: 0%;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.location-time {
+    margin-top: 10px;
+}
+
+.location-time p {
+    margin: 10px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.location-time p i {
+    margin-right: 5px;
+}
+
+#error-message {
+    color: #e74c3c;
+    font-weight: bold;
+}
